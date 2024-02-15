@@ -1,7 +1,7 @@
 h1 {
   border-top: 5px dotted rgb(16, 90, 30);
 }
-div {
+Pre {
   border-top: double;
 }
 body {
@@ -49,5 +49,11 @@ body {
     text-align: center;
   }
   h2 {
+    text-align: center;
+  }
+  Pre {
+    text-align: center;
+  }
+  figcaption {
     text-align: center;
   }
