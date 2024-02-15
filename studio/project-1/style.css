@@ -35,4 +35,6 @@ h3 {
 p {
   font-size: 1rem;
 }
-
+.center {
+  text-align: center;
+}
