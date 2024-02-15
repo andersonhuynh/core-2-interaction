@@ -1,3 +1,9 @@
+h1 {
+  border-top: 5px dotted rgb(16, 90, 30);
+}
+div {
+  border-top: double;
+}
 body {
     background-color: lightblue;
   }
@@ -5,13 +11,13 @@ body {
   body {
     margin: 0;
     background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 0%);
     line-height: 1.5;
-    font-family: "Helvetica", Calibri, Tahoma, sans-serif;
+    font-family: "Helvetica Bold", Calibri, Tahoma, sans-serif;
   }
   
   h2, h3 {
-    color: hsl(240, 71%, 20%)
+    color: hsl(0, 0%, 0%)
   }
   
   h1 {
@@ -35,6 +41,13 @@ body {
   p {
     font-size: 1rem;
   }
-  .center {
+
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
     text-align: center;
   }
