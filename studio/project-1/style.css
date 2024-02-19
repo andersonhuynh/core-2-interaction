@@ -12,7 +12,7 @@ a {
 }
 body {
   margin: 0;
-  background-color: hsl(223, 68%, 11%);
+  background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 10%);
   line-height: 1.5;
   font-family: "Helvetica", Calibri, Tahoma, sans-serif;
@@ -25,7 +25,7 @@ h1, h3 {
 h1 {
   font-family: "Apple Garamond";
   font-size: 5rem;
-  font-style: italic;
+  font-style: bold;
   font-weight: 100;
 }
 
@@ -49,5 +49,5 @@ p {
 }
 
 body {
-  cursor: url("swirl.png"), auto
+  cursor: url("swirl2.png"), auto
 }
