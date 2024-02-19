@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Library of Babel</title>
-      <link rel="stylesheet" href="style.css">
+    <title>Library of Babel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-  div {
-  background-color: lightblue;
-  border: 1px solid black;
-  height: 750px;
-  width: 10000px;
-  overflow-x: scroll;
-}
-p {
-  width: 1000px;
-  margin: 10px;
-}
+    body {
+        margin: 0;
+    }
+
+    div {
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        height: 750px;
+        width: 30000px;
+        overflow-x: scroll;
+        white-space: nowrap; /* Prevent line breaks in the text */
+    }
+
+    p {
+        width: 30000px;
+        margin: -90px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adjust the values as needed */
+    }
+
+    .link-container {
+        text-align: right;
+        padding-right: 100px; /* Adjust padding as needed */
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+        font-size: 34px;
+    }
 </style>
+
 <body>
-  <div>
-    <p>(Your text goes here. Also, you can place other elements within this parent div.)</p>
-  </div>
+    <div>
+        <br><br><br><br>
+        <span style='font-size:100px;'>&#8594;</span>
+        <p class="link-container">
+            <a class="link" href="library.html">★</a>
+        </p>
+    </div>
 </body>
+
 </html>
+
