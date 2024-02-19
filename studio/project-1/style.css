@@ -1,22 +1,31 @@
+@font-face {
+  font-family: 'Apple Garamond';
+  src: url('AppleGaramond.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;}
 body {
   background-color: lightblue;
 }
-
+a {
+  color: rgb(255, 255, 255);
+}
 body {
   margin: 0;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(223, 68%, 11%);
   color: hsl(0, 0%, 10%);
   line-height: 1.5;
   font-family: "Helvetica", Calibri, Tahoma, sans-serif;
 }
 
-h2, h3 {
-  color: hsl(35, 91%, 43%)
+h1, h3 {
+  color: hsl(0, 0%, 100%)
 }
 
 h1 {
-  font-size: 2rem;
-  font-style: bold;
+  font-family: "Apple Garamond";
+  font-size: 5rem;
+  font-style: italic;
   font-weight: 100;
 }
 
@@ -37,4 +46,8 @@ p {
 }
 .center {
   text-align: center;
+}
+
+body {
+  cursor: url("swirl.png"), auto
 }
