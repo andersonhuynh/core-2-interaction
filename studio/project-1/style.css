@@ -21,6 +21,9 @@ body {
 h1, h3 {
   color: hsl(0, 0%, 85%)
 }
+h2 {
+  color: hsl(0, 0%, 100%)
+}
 
 h1 {
   font-family: "Apple Garamond";
@@ -53,3 +56,10 @@ body {
 }
 .link { color: #ffffff; } /* CSS link color (red) */
 .link:hover { color: #ffdd00; } /* CSS link hover (green) */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-left: 20; /* Remove the left margin for smaller screens */
+    font-size: 3.5rem
+  }
+}
