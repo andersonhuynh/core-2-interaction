@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <style>
-        .center {
-          text-align: center;
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Text Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
-        </style>
-    </head>
-    <body>
-      <link rel="stylesheet" href="style.css">
-      <h2>low railings</h2>
-    </body>
+
+        .search-bar {
+            position: relative;
+        }
+
+        .search-input {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: #2ecc71;
+        }
+
+        .search-input:focus + .result::after {
+            content: attr(data-content);
+        }
+
+        .result::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Type here..." data-content="">
+        <div class="result"></div>
+    </div>
+</body>
+
 </html>
