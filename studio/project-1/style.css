@@ -51,3 +51,5 @@ p {
 body {
   cursor: url("swirl2.png"), auto
 }
+.link { color: #ffffff; } /* CSS link color (red) */
+.link:hover { color: #ffdd00; } /* CSS link hover (green) */
