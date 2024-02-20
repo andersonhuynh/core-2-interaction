@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <style>
-        .center {
-          text-align: center;
+<html lang="en">
+
+<head>
+    <title>Library of Babel</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
         }
-        </style>
-    </head>
-    <body>
-      <link rel="stylesheet" href="style.css">
-        <h1>The Hexagons</h1>
-        <h2>You are about to enter into a world that has no end and no beginning</h2>
-        <em>Welcome to the Hexagon <br> right this way...........</em>
-        <br><br>
-        <a href="https://libraryofbabel.info/">click</a>
-        <article>
-            <h2>The Hexagons</h2>
-            <p>Where those who live in the library reside and where many call home.</p>
-          </article>
-        <time>10:00</time>
-        <article>
-            <header>
-              <a href="index.html">The Library</a> |
-              <p>The contents:</p>
-            </header>
-          </article>
-    </body>
+
+        .hexagon {
+            width: 200px; /* Adjust the width */
+            height: 115px; /* Adjust the height */
+            background-color: #ffffff;
+            position: relative;
+            animation: spin 5s linear infinite; /* Adjust the duration and timing function as needed */
+        }
+
+        .hexagon:before,
+        .hexagon:after {
+            content: '';
+            width: 0;
+            border-left: 100px solid transparent; /* Adjust the border size */
+            border-right: 100px solid transparent; /* Adjust the border size */
+            position: absolute;
+        }
+
+        .hexagon:before {
+            top: -58px; /* Adjust the top position */
+            border-bottom: 58px solid #ffffff; /* Adjust the border size */
+        }
+
+        .hexagon:after {
+            bottom: -58px; /* Adjust the bottom position */
+            border-top: 58px solid #ffffff; /* Adjust the border size */
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hexagon"></div>
+</body>
+
 </html>

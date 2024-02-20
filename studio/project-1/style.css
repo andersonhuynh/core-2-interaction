@@ -41,6 +41,7 @@ div {
 }
 
 h2 {
+  font-family: "Trebuchet MS";
   font-size: 1rem;
   font-style: bold;
   font-weight: 200;
@@ -55,6 +56,7 @@ h3 {
 p {
   font-size: 1rem;
 }
+
 .center {
   text-align: center;
 }
@@ -66,7 +68,7 @@ body {
 .link:hover { color: #ffdd00; } /* CSS link hover (green) */
 
 @media only screen and (max-width: 600px) {
-  h1 {
+  h1{
     font-size: 3.5rem
   }
 }
@@ -76,4 +78,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4px;
+}
+
+h2{
+  font-size: 1rem
+}
+.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 4px;
 }

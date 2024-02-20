@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <style>
-        .center {
-          text-align: center;
-        }
-        </style>
-    </head>
-    <body>
+
+<head>
+  <title>Library of Babel</title>
       <link rel="stylesheet" href="style.css">
-        <h1>Closet One</h1>
-        <br>
-        <h1>Closet Two</h1>
-    </body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .box {
+      width: 250px;
+      height: 350px;
+      background-color: #e0e0e0;
+      margin: 30px;
+      display: inline-block;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+
+    .box1 {
+      /* You can customize the styles for box 1 here */
+    }
+
+    .box2 {
+      /* You can customize the styles for box 2 here */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a href="bookshelf.html" target="_blank">
+      <div class="box box1"></div>
+    </a>
+
+    <a href="lamps.html" target="_blank">
+      <div class="box box2"></div>
+    </a>
+  </div>
+</body>
 </html>
