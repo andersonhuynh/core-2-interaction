@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
+<html lang="en">
+  <head>
+    <title>Library of Babel</title>
       <link rel="stylesheet" href="style.css">
-  </div>
-</div>
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        body {
+            font-family: "Apple Garamond";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            font-family: "Apple Garamond";
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="generateRandom()">Push</button>
+    <br><br>
+    <div id="result"></div>
+
+    <script>
+        function generateRandom() {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-+=[]{}|;:,.<>?';
+            const randomLength = Math.floor(Math.random() * 20) + 5; // Random length between 5 and 25
+            let randomString = '';
+
+            for (let i = 0; i < randomLength; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                randomString += characters.charAt(randomIndex);
+            }
+
+            document.getElementById('result').innerText = `Random: ${randomString}`;
+        }
+    </script>
+</body>
 </html>
+
