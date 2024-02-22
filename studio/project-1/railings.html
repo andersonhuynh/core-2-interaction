@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Library of Babel</title>
+<html lang="en">
+<head>
+  <title>Library of Babel</title>
       <link rel="stylesheet" href="style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-        .center {
-          text-align: center;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 10000vh; /* Adjust this height as needed */
+            font-family: Arial, sans-serif;
         }
-        h1.small {
-    line-height: 1;
-    }
-    h1.big {
-    line-height: 1.8;
-    }  
-        </style>
-    </head>
-    <body>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <a class="link" href="hallway.html">
-      <hr><hr>
-      </a>
-      <br><br>
-    </body>
+
+        .arrow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 40px solid rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        #bottom-link {
+            text-align: center;
+            margin-top: 9900vh; /* Should be more than the height of the page to ensure visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow-container">
+        <div class="arrow-down" onclick="scrollToBottom()"></div>
+    </div>
+
+    <!-- Content of the page -->
+    <div id="bottom-link">
+      <a href="hallway.html">
+      <hr><hr><hr><br><br
+    </a>
+    </div>
+    <br>
+
+    <script>
+        function scrollToBottom() {
+            const bottomLink = document.getElementById('bottom-link');
+            bottomLink.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
 </html>

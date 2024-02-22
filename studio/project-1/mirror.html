@@ -2,110 +2,117 @@
 <html>
 <head>
   <title>Library of Babel</title>
-      <link rel="stylesheet" href="style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* Fade in and out while moving to lower right */
-.fade-in-out-to-lower-right {
-  animation-name: fade-in-out-to-lower-right;
-}
+    .fade-in-out-to-lower-right {
+      animation-name: fade-in-out-to-lower-right;
+    }
 
-@keyframes fade-in-out-to-lower-right {
-  from {
-    opacity: 0;
-    top: 400px;
-    left: 0px;
-    scale: 0;
-  }
-  50% {
-    opacity: 1;
-    top: 150px;
-    left: 150px;
-    scale: 2;
-  }
+    @keyframes fade-in-out-to-lower-right {
+      from {
+        opacity: 0;
+        top: 400px;
+        left: 0px;
+        scale: 0;
+      }
+      50% {
+        opacity: 1;
+        top: 150px;
+        left: 150px;
+        scale: 2;
+      }
 
-  to {
-    opacity: 0;
-    top: 400px;
-    left: 400px;
-    scale: 0;
-  }
-}
+      to {
+        opacity: 0;
+        top: 400px;
+        left: 400px;
+        scale: 0;
+      }
+    }
+
     /**************************************/
-/* Color, Body and Container Settings */
-/**************************************/
-/* Center shapes */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    /* Color, Body and Container Settings */
+    /**************************************/
+    /* Center shapes */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
 
-/* Set light gray border */
-.container {
-  width: 400px;
-  height: 500px;
-  border: 5px solid rgb(0, 0, 0);
-  background: rgb(0, 0, 0);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1px;
-  margin: 5px;
-}
-/* Shape */
-.circle {
-  position: absolute;
-  width: 140px;
-  height: 200px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  animation-duration: 5s;
-  /* animation-iteration-count: 3; */
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-/* Fade In */
-.fade-in {
-  animation-name: fade-in;
-}
+    /* Set light gray border */
+    .container {
+      width: 80vw;
+      max-width: 400px;
+      height: 60vh;
+      border: 5px solid rgb(0, 0, 0);
+      background: rgb(0, 0, 0);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1px;
+      margin: 5px;
+    }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
+    /* Shape */
+    .circle {
+      position: absolute;
+      width: 40%;
+      height: 50%;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
 
-  to {
-    opacity: 5;
-  }
-}
+    /* Fade In */
+    .fade-in {
+      animation-name: fade-in;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 500px) {
+      .container {
+        width: 30vw;
+      }
+    }
   </style>
-
 </head>
 <body>
   <a class="link" href="closet.html">
-  <div class="container">
-      <div class="circle fade-in"></div>
-  </a>
-
-    </div>
-  <a class="link" href="hexagon.html">
-  <div class="container">
-      <div class="circle fade-in"></div>
-    </a>
-
-    </div>
-    <a class="link" href="staircase.html">
     <div class="container">
       <div class="circle fade-in"></div>
-      <div>
+    </div>
   </a>
-<div></div>
-  </div>
+
+  <a class="link" href="hexagon.html">
+    <div class="container">
+      <div class="circle fade-in"></div>
+    </div>
+  </a>
+
+  <a class="link" href="staircase.html">
+    <div class="container">
+      <div class="circle fade-in"></div>
+    </div>
+  </a>
 </body>
 </html>
