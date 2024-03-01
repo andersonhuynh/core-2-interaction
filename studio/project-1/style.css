@@ -3,26 +3,35 @@
   src: url('AppleGaramond.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;}
-body {
-  background-color: lightblue;
+  font-display: swap;
 }
-a {
-  color: rgb(255, 255, 255);
-}
+
 body {
   margin: 0;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 10%);
   line-height: 1.5;
   font-family: "Helvetica", Calibri, Tahoma, sans-serif;
+  cursor: url("swirl2.png"), auto;
+}
+
+body, a {
+  background-color: lightblue;
+}
+
+a {
+  color: rgb(255, 255, 255);
 }
 
 h1, h3 {
-  color: hsl(0, 0%, 85%)
+  color: hsl(0, 0%, 85%);
 }
+
 h2 {
-  color: hsl(0, 0%, 100%)
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-style: bold;
+  font-weight: 200;
 }
 
 h1 {
@@ -33,61 +42,36 @@ h1 {
   padding: 0 0.7em;
 }
 
-div {
+div, h2, h3, p {
   font-family: "Trebuchet MS";
   font-size: 1rem;
   font-style: bold;
   font-weight: 100;
-  color: #ffffff
+  color: #ffffff;
 }
 
-h2 {
-  font-family: "Trebuchet MS";
-  font-size: 1rem;
-  font-style: bold;
-  font-weight: 200;
+.link {
+  color: #ffffff;
 }
 
-h3 {
-  font-size: 1rem;
-  font-style: bold;
-  font-weight: 100;
-}
-
-p {
-  font-size: 1rem;
+.link:hover {
+  color: #ffdd00;
 }
 
 .center {
   text-align: center;
 }
 
-body {
-  cursor: url("swirl2.png"), auto
-}
-.link { color: #ffffff; } /* CSS link color (red) */
-.link:hover { color: #ffdd00; } /* CSS link hover (green) */
-
 @media only screen and (max-width: 600px) {
-  h1{
-    font-size: 3rem
+  h1 {
+    font-size: 3rem;
   }
 }
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 4px;
-}
-
-h2{
-  font-size: 1rem
-}
-.container {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 4px;
 }
