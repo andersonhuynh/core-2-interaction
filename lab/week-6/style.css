@@ -1,60 +1,78 @@
-h1 {
-  border-top: 5px dotted rgb(16, 90, 30);
-}
-Pre {
-  border-top: double;
-}
 body {
-    background-color: lightblue;
-  }
-  
-  body {
-    margin: 0;
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 0%);
-    line-height: 1.5;
-    font-family: "Helvetica Bold", Calibri, Tahoma, sans-serif;
-  }
-  
-  h2, h3 {
-    color: hsl(0, 0%, 0%)
-  }
-  
-  h1 {
-    font-size: 2rem;
-    font-style: bold;
-    font-weight: 100;
-  }
-  
-  h2 {
-    font-size: 1rem;
-    font-style: bold;
-    font-weight: 200;
-  }
-  
-  h3 {
-    font-size: 1rem;
-    font-style: bold;
-    font-weight: 100;
-  }
-  
-  p {
-    font-size: 1rem;
-  }
+  background-color: rgb(213, 213, 213);
+}
+.flex-container {
+  display: flex;
+  background-color: rgb(13, 27, 105);
+}
 
-  p {
-    text-align: center;
-  }
-  h1 {
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  Pre {
-    text-align: center;
-  }
-  figcaption {
-    text-align: center;
-  }
-  
+.flex-container{
+  margin: 10px;
+  padding: 60px;
+  font-size: 9em;
+  border: 0.2em solid rgb(9, 29, 116);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(22, 44, 172);
+}
+
+.flex-container > div {
+  background-color: #3845bc;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.relative {
+  position: relative
+}
+
+.relative{
+  margin: 10px;
+  padding: 60px;
+  font-size: 4em;
+  border: 0.2em solid rgb(12, 44, 184);
+  background: rgb(13, 29, 120);
+  width:43%;
+}
+
+
+.grid-container{
+  background-color: rgb(13, 29, 120);
+  margin: 10px;
+  padding: 100px;
+  font-size: 2em;
+  border: 0.2em solid rgb(12, 44, 184);
+}
+
+.fixed-position {
+  background-color: #00bfff;
+  border-top: solid rgb(12, 44, 184) 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.fixed-position {
+  background-color: rgb(13, 29, 120);
+  right: 250px;
+  position: fixed;
+  top: 30px;
+  width:55%;
+}
+
+ .relative {
+  position: relative;
+}
+
+div {
+
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
