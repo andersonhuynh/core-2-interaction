@@ -1,0 +1,5 @@
+I chose to focus on box mdoel and the layout for the 
+webpage. I used all four of the elements with the fixed on top and flex on the 
+bottom of the website. I used blue and outlines with each 
+box to create seperation between each area and switched the font and positioning 
+of the headline. 
