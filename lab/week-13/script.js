@@ -14,7 +14,7 @@ function setup() {
 }
 function draw(){
   if (rectW) {
-    fill(255, 0, 0);
+    fill("#065535");
     rect(0, 0, width / 2, height / 2);
   } else{
     fill("white");
@@ -22,21 +22,21 @@ function draw(){
   }
 
   if (rectE) {
-    fill(0, 255, 0);
+    fill("#0047ab");
     rect(width / 2, 0, width / 2, height / 2);
   } else {
     fill("white");
     rect(width / 2, 0, width / 2, height / 2);
   }
   if (rectR) {
-    fill(0, 0, 255);
+    fill("#ff76d8");
     rect(0, height / 2, width / 2, height / 2);
   } else {
     fill("white");
     rect(0, height / 2, width / 2, height / 2);
   }
   if (rectK) {
-    fill(255, 255, 0);
+    fill("#fb7e00");
     rect(width / 2, height / 2, width / 2, height / 2);
   } else {
     fill("white");
