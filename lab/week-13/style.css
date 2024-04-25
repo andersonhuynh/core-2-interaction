@@ -4,6 +4,7 @@ body{
     font-weight: 400;
     font-size: 1.5em;
     font-style: normal;
+    text-align: center;
 }
 main{
     width:100vw;
