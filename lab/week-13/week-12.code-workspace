@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../X Anderson's Favorite Songs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "week-12"
+	}
+}

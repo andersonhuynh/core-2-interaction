@@ -1,0 +1,27 @@
+body{
+    overflow: hidden;
+}
+main{
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    
+    z-index: 999;
+    width: 50vw;
+    height: 50vh;
+
+    background-color:red;
+}
