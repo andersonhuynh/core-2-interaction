@@ -1,5 +1,9 @@
 body{
     overflow: hidden;
+    font-family: "pragmatapro-fraktur", serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: normal;
 }
 main{
     width:100vw;
@@ -23,5 +27,5 @@ main{
     width: 50vw;
     height: 50vh;
 
-    background-color:red;
+    background-color:rgb(127, 149, 160);
 }
