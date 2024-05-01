@@ -10,6 +10,8 @@ body {
     padding: 8px 6px;
     position: sticky;
     top: 0px;
+
+    z-index: 999;
   }
   
   /* Style the header links */
@@ -72,13 +74,16 @@ body {
     position:absolute;
    
     left:30%;
-    top: 52%;
+    top: 42%;
     border-radius: 8px;
     font-family: "proxima-nova-extra-condensed", sans-serif;
     font-weight: 800;
     font-style: normal;
     display: none;
     transition: opacity 5s;
+
+    z-index: 999;
+
 
   }
   .popup button{
@@ -112,6 +117,10 @@ a{
     width: 100vw;
     display: flex;
     flex-direction: column;
+
+    position: relative;
+    top: -100px;
+    z-index: 0;
 }
 .container div {
     height: 110vh;
