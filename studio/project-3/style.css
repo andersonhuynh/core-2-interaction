@@ -86,7 +86,7 @@ body {
     padding: 20px 40px;
     position:absolute;
     text-align: center;
-    left:35%;
+    left:34%;
     top: 32%;
     border-radius: 8px;
     font-family: "proxima-nova-extra-condensed", sans-serif;
@@ -140,8 +140,7 @@ a{
     height: fit-content;
     margin-top: 6em;
 }
-.container div {
- 
+.container-1 div {
     object-fit: contain !important;
 
 }
@@ -269,15 +268,14 @@ a{
   box-sizing: border-box;
 }
 
-
-.container {
+.container-1 {
   width: 350px;
   height: 500px;
   perspective: 800px;
 }
 
-.container:hover > .card {
-  cursor: url("c.png"), auto;
+.container-1:hover > .card {
+  cursor: pointer;
   transform: rotateY(180deg);
 }
 
@@ -289,8 +287,8 @@ a{
   transform-style: preserve-3d;
 }
 
+.front,
 .back {
-  background-color: black;
   height: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -300,22 +298,20 @@ a{
 }
 
 .front {
-  background-color: #000000;
+  background-image: url(dayglow-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+}
+
+.back {
+  background-color: #3a3a3a;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-
-.front {
-  background-image: url("dayglow-1.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cardback{
-  color: white;
+  gap: 5rem;
 }
