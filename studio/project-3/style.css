@@ -128,7 +128,7 @@ a{
     padding: 5px 0;
 }
 .container {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -138,9 +138,10 @@ a{
     z-index: 0;
 
     height: fit-content;
+    margin-top: 6em;
 }
 .container div {
-    height: 100vh;
+ 
     object-fit: contain !important;
 
 }
@@ -254,4 +255,64 @@ a{
 .ticketmoreinfo div:nth-child(3){
     left:30%;
 
+}
+
+.html, body {
+  cursor: url("c.png"), auto;
+}
+
+/* Flip Box*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+}
+
+.container:hover > .card {
+  cursor: url("c.png"), auto;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #000000;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.front {
+  background-image: url("dayglow-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
