@@ -83,10 +83,10 @@ body {
     background-color: black;
     color:white;
     width:450px;
-    padding: 30px 40px;
+    padding: 20px 40px;
     position:absolute;
     text-align: center;
-    left:32%;
+    left:35%;
     top: 32%;
     border-radius: 8px;
     font-family: "proxima-nova-extra-condensed", sans-serif;
@@ -289,7 +289,6 @@ a{
   transform-style: preserve-3d;
 }
 
-.front,
 .back {
   background-color: black;
   height: 100%;
@@ -315,4 +314,8 @@ a{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.cardback{
+  color: white;
 }
