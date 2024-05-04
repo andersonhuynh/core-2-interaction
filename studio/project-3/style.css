@@ -1,6 +1,7 @@
 body {
     font-family: "proxima-nova-extra-condensed", sans-serif;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
     margin: 0px;
 }
 
@@ -138,7 +139,7 @@ a{
     z-index: 0;
 
     height: fit-content;
-    margin-top: 6em;
+    /* margin-top: 6em; */
 }
 .container-1 div {
     object-fit: contain !important;
@@ -190,7 +191,7 @@ a{
     padding-top: 50vh;
 }
 
- 
+
 
 .tickets img {
     width: 75%;
@@ -215,7 +216,7 @@ a{
     justify-content: center;
     align-items: center;
     gap: 0px;
-    margin-top: 210px;
+    margin-top: 180px;
 }
 
 
@@ -228,9 +229,9 @@ a{
     flex-direction: column;
 
     position: absolute;
-    top: 120px;
+    top: 130px;
 
-    gap: 30px;
+    gap: 20px;
 }
 
 .ticketmoreinfo div {
@@ -248,11 +249,11 @@ a{
 }
 
 .ticketmoreinfo div:nth-child(2){
-    left:20%;
+    left:70%;
 
 }
 .ticketmoreinfo div:nth-child(3){
-    left:30%;
+    left:10%;
 
 }
 
@@ -371,4 +372,117 @@ transform: rotateY(180deg);
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1.75rem;
+}
+
+.funName {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.funName input {
+  width: 35%;
+  min-height: 50px;
+}
+
+#submitName, #redo{
+  width: 10%;
+  height: fit-content;
+
+  background-color: black;
+  border-color: black;
+
+  font-size: 2em;
+
+  border-radius: 5px;
+  color:white;
+  outline: none;
+}
+
+#redo {
+  width: 20%;
+  font-weight: 600;
+}
+
+.DWartist{
+width: auto;
+  height: 95%;
+  align-items: left;
+
+  object-fit: contain !important;
+}
+
+
+.artistContainer {
+  width: 100vw;
+  height: 100vh;
+
+  /* padding-top:10px; */
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+
+  overflow-y: hidden;
+
+  position: absolute;
+  top: 0px;
+}
+
+.artistContainer * {
+  width: 50%;
+}
+
+.artistContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.artistContainer div * {
+  text-align: center;
+}
+
+.artistTitle{
+  align-items: center;
+  font-size: 7em;
+  line-height: 6.5rem;
+
+}
+
+.artistdesc {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-decoration: underline;
+}
+.tix {
+  opacity: 0%;
+  transition: opacity 0.5s ease;
+}
+.visible {
+  opacity: 100%;
+}
+
+.funName h1 {
+  font-size: 5em;
+}
+
+input {
+  font-family: 'proxima-nova-extra-condensed';
+  text-align: center;
+  font-size: 1.5em;
 }
