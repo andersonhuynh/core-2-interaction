@@ -64,6 +64,7 @@ body {
     display: flex;
     flex-direction: row;
     gap:10px;
+    
   }
   .header-right a {
     margin-left: 0px;
@@ -238,8 +239,9 @@ a{
 /* ticket information (edit text here)*/
 
 .ticketmoreinfo div {
-    background-color: red;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    outline: 1px solid black;
     height: 30%;
     width: 20%;
     padding-top: 4px;
@@ -465,7 +467,7 @@ width: auto;
 
 .artistTitle{
   align-items: center;
-  font-size: em;
+  font-size: 90px;
   line-height: 6.5rem;
 
 }
