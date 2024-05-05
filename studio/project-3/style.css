@@ -351,7 +351,7 @@ transform: rotateY(180deg);
   flex-direction: row;
 
   width: 100vw;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
 
 }
@@ -359,8 +359,8 @@ transform: rotateY(180deg);
 #title {
   width: 100vw;
   text-align: center;
-  font-size: 5em;
-  margin-top: 55px;
+  font-size: 6em;
+  margin-top: 45px;
   font-weight: 900;
   margin-bottom: 70px;
 
@@ -464,7 +464,7 @@ width: auto;
 
 .artistTitle{
   align-items: center;
-  font-size: 7em;
+  font-size: em;
   line-height: 6.5rem;
 
 }
