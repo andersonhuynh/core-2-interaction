@@ -392,7 +392,7 @@ transform: rotateY(180deg);
 }
 
 #submitName, #redo{
-  width: 10%;
+  width: 13%;
   height: fit-content;
 
   background-color: black;
@@ -408,6 +408,7 @@ transform: rotateY(180deg);
 #redo {
   width: 20%;
   font-weight: 600;
+  font-size: 1.3em;
 }
 
 .DWartist{
