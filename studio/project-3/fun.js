@@ -14,5 +14,7 @@ document.querySelector("#submitName").addEventListener("click", function(){
 
     let index = Math.floor(Math.random() * urls.length);
     let artist = urls[index];
-    window.location.replace(`http://127.0.0.1:5500/core-2-interaction/studio/project-3/Artists/` + artist);
+    window.location.replace(`http://127.0.0.1:5500/Artists/` + artist);
 })
+
+//window.location.replace(`http://127.0.0.1:5500/core-2-interaction/studio/project-3/Artists/` + artist);
