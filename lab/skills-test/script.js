@@ -37,3 +37,48 @@ function makeItBlue(){
     circle.style.backgroundColor="blue";
 }
 
+//House Object//
+
+let house = {
+    floors: 2,
+    rooms: 5,
+    dishes: 30,
+    plants: 20,
+    color: 'red',
+}
+
+let neighborhood = {
+    house1: {
+        floors: 2,
+    rooms: 5,
+    dishes: 30,
+    plants: 20,
+    color: 'red',
+    },
+    house2: {
+        floors: 1,
+    rooms: 2,
+    dishes: 3,
+    plants: 2,
+    color: 'orange',
+    },
+
+}
+
+//House Console Testing// 
+
+console.log(house);
+
+function changeCircle(){
+    console.log('The color of house 2 is '+ neighborhood.house2.color)
+
+     circle.style.backgroundColor = neighborhood.house2.color;
+}
+
+console.log('I am the color '+ house.color);
+console.log('I have '+ house.rooms + ' rooms');
+
+//(fun) color change//
+circle.addEventListener("mouseleave", function(){
+    changeCircle();
+})
